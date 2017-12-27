@@ -1,0 +1,31 @@
+ <html>
+
+ <head>
+ </head>
+
+<body>
+    <script "text/javascript">
+        function my_function(name, doc_data)
+        {
+            alert('Hey, '+name+'! Woah! Awesome pop up')
+            document.write('I like ' + doc_data)
+        }
+
+        function add(a, b)
+        {
+                var c = a + b
+                return c
+        }
+
+        document.write("Addition is: " + add(5, 5))
+    </script>
+
+
+    <form>
+        <input type="button" value="Touch Me" onclick="my_function('Prasad', 'Tabla')" />
+
+    </form>
+
+</body>
+
+ </html>
