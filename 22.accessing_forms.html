@@ -1,0 +1,24 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <form name=my_form>
+        Username: <input type="text" name="usersname" />
+        Password: <input type="password" name="password"/>
+        <input type="submit" value="submit" />
+    </form>
+
+   <script type="text/javascript">
+        var first_form = document.forms[0]   // if n forms are there then forms[n-1] to access that nth form
+        document.write('Number of elements in first form:', first_form.length, '<br />')  // 3
+        document.write('First element of first_form is object actually: ', first_form.elements[0], '<br />')  // [object HTMLInputElement]
+        document.write('First element property(attribute) of first_form: ', first_form.elements[0].name, '<br />')  // usersname
+
+        var password = document.my_form.password.name                        // another way of accessing form elements
+        document.write('Accessing the password element in form:', password)  // password
+   </script>
+</body>
+
+</html>

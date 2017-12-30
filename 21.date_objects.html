@@ -1,0 +1,23 @@
+<html>
+
+<head>
+</head>
+
+<body>
+   <script type="text/javascript">
+        function printTime()
+        {
+            var now = new Date()            // now = Sat Dec 30 2017 15:11:08 GMT+0530 (IST)
+            // gives me the current date and time
+
+            var hours = now.getHours()
+            var minutes = now.getMinutes()
+            var seconds = now.getSeconds()
+
+            document.write(hours,":", minutes,":",seconds, '<br />')
+        }
+        setInterval("printTime()", 1000)    // run printTime every 1000 msec i.e. 1 sec
+   </script>
+</body>
+
+</html>

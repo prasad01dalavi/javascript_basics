@@ -1,0 +1,25 @@
+<html>
+
+<head>
+</head>
+
+<body>
+   <script type="text/javascript">
+        var movies = new Array("x-man", "iron-man", "spiderman", "doctor strange")
+
+        var string1 = movies.join()                // array to string conversion
+        document.write('array movies = ', movies)  // x-man,iron-man,spiderman,doctor strange
+        document.write("<br />")
+        document.write('string1 = ', string1)      // x-man,iron-man,spiderman,doctor strange
+        document.write("<br />")
+
+        var string2 = movies.join('-')
+        document.write('string2 = ', string2)      // x-man-iron-man-spiderman-doctor strange
+        document.write("<br />")
+
+        movies.pop()                             // removes the last element from my array
+        document.write('movies array after pop = ', movies) // x-man,iron-man,spiderman
+   </script>
+</body>
+
+</html>

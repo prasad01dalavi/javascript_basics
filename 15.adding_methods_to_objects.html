@@ -1,7 +1,6 @@
 <html>
 
 <head>
-
     <script type="text/javascript">
         // creating my own object
         function person(name, age)
@@ -11,28 +10,22 @@
 
             this.years_until_retire = years_left  // Note: We don't add parenthesis
         }
-
         function years_left()
         {
             var num_years = 65 - this.age
             return num_years
         }
-
-        // I think this is like constructor 
+        // I think this is like constructor
         var prasad = new person("Prasad Dalavi", 24)      // similar to jave instance creation
         var pranit = new person("Pranit Dalavi", 19)
-
     </script>
-
 </head>
 
 <body>
-
    <script type="text/javascript">                  // I am writing this javascipt for the second time.
        document.write(prasad.years_until_retire(), "<br />")  // 41 calling the properties/methods of object
        document.write(pranit.years_until_retire())  //46
    </script>
-
 </body>
 
 </html>
