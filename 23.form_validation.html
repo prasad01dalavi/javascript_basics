@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function validator()
+        {
+            var name = document.my_form.username.value  // gives me the value entered in username field
+            if (document.my_form.thebox.checked)
+            {
+                alert("It's checked !!!");
+                alert('My username is: ' + name);
+            }
+
+            else
+                alert("Noooo! It's not checked !!!")
+        }
+    </script>
+</head>
+
+<body>
+    <form name=my_form>
+        <input type="checkbox" name="thebox" />
+        Username: <input type="text" name="username" />
+        <input type="button" value="Press me !" onClick="validator()" />
+        <!-- validator method in script will be called when we click on button -->
+    </form>
+</body>
+
+</html>
